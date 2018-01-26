@@ -1,0 +1,24 @@
+{
+  "plugins": ["theme-api", "collapsible-chapters", "insight-snippet", "versions"],
+  "pluginsConfig": {
+    "theme-api": {
+      "languages": [
+        {
+          "lang": "http",
+          "name": "Http",
+          "default": true
+        },
+        {
+          "lang": "js",
+          "name": "Javascript"
+        }
+      ]
+    },
+    "versions": {
+      "type": "tags"
+    }
+  },
+  "styles": {
+    "website": "website.css"
+  }
+}

@@ -1,4 +1,4 @@
-# Overview
+# Insight.io API Documentation
 
 This documentation enumerates all the REST APIs Insight.io Enterprise supports.
 
