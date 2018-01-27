@@ -1,0 +1,16 @@
+{
+  "name": "docs",
+  "scripts": {
+    "gitbook": "gitbook"
+  },
+  "version": "0.4.14",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.0"
+  },
+  "dependencies": {
+    "gitbook-plugin-collapsible-chapters": "^0.1.8",
+    "gitbook-plugin-insight-snippet": "0.0.3",
+    "gitbook-plugin-theme-api": "^1.1.2",
+    "gitbook-plugin-versions": "^2.1.4"
+  }
+}

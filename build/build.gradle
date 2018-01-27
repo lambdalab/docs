@@ -25,7 +25,7 @@ gitPublish {
   // what to keep in the existing branch (include=keep)
   preserve {
     include '**'
-    exclude 'build/**', "build.gradle", "*/**.rst"
+    exclude 'build', "build.gradle", "**.rst"
   }
 
   // message used when committing changes
