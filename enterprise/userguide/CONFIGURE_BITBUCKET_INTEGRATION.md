@@ -64,7 +64,7 @@ In your `lambdalab.conf` file, add a new `bitbucket` section into the `securesoc
 * `consumerKey` is the key for the OAuth1 secret
 * `privateKey` is the content of the private key you have generated at the very beginning of this tutorial.
 
-**Notice**: Before copy the private key, remove the `-----PRIVATE PUBLIC KEY-----` and `-----PRIVATE PUBLIC KEY-----` header and join the rest of the key into 1 single line.
+**Notice**: Before copy the private key, remove the `-----PRIVATE PUBLIC KEY-----` and `-----PRIVATE PUBLIC KEY-----` header and join the rest of the key into 1 single line. (A helpful command line for joining multiple lines together into one single line is `cat xxx.pem | xargs | sed "s/ //g"`).
 
 ```
 bitbucket {
@@ -77,7 +77,33 @@ bitbucket {
 }
 ```
 
-Then restart the codatlas service by `./lambda-compose restart lambda_codatlas`
+Then restart the codatlas service by `./lambda-compose restart lambda_codatlas`.
+
+## (Optional) Configure OAuth with BitBucket Server Admin User Personal Access Token
+
+(This section is optional)
+
+To let BitBucket Server grant Insight.io with higher level of permission, you can attach personal access token of the Admin user to Insight.io. Follow the steps below to achieve this:
+
+1. Login with `admin` account on your BitBucket Server and find the *Personal Access Token* settings in *Account* page (/account).
+![image](https://user-images.githubusercontent.com/987855/36080840-86517456-0f4b-11e8-8cd6-6a51e4af05e5.png)
+2. Create a new token by clicking the "Create a token" button on the top right.
+3. Provide at least *Write* permission for both *Projects* and *Repositories*.
+![image](https://user-images.githubusercontent.com/987855/36080856-bd65ab6a-0f4b-11e8-9aa6-45bbf7b7f8f8.png)
+4. Keep the new created token
+![image](https://user-images.githubusercontent.com/987855/36080903-7ee6c49a-0f4c-11e8-8805-667c24d24489.png)
+5. Add two additional fields `adminUsername` and `adminToken` in the `bitbucket` section as mentioned above. Then
+the entire `bitbucket` section should look like:
+
+```
+bitbucket {
+  ...
+  consumerKey=xxx
+  privateKey=xxx
+  adminUsername=admin
+  adminToken="NTI0NTI3NDE3NDQzOmPP6AuBAbdhJntXn1fHXW+Tlu77"
+}
+```
 
 ## Verify the Integration
 If everything works well, you should be able to see *Login with BitBucket* button in login page. Click on it to kick off the standard OAuth1 authentication process.
