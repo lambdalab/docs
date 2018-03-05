@@ -16,6 +16,7 @@
   * [Configure BitBucket Server Integration](./enterprise/userguide/CONFIGURE_BITBUCKET_INTEGRATION.md)
   * [Configure LDAP Integration](./enterprise/userguide/CONFIGURE_LDAP_INTEGRATION.md)
   * [Configure SAML Integration](./enterprise/userguide/CONFIGURE_SAML.md)
+  * [Configure Insight.io Browser Plugin for GitHub Enterprise](./enterprise/userguide/CONFIGURE_PLUGIN_GITHUB_ENTERPRISE.md)
   * [Create an Account](./enterprise/userguide/CREATE_ACCOUNT.md)
   * [Add Repository](./enterprise/userguide/ADD_REPOSITORY.md)
   * [Use Gitlab Plugin](./enterprise/userguide/USE_GITLAB_PLUGIN.md)

@@ -21,4 +21,4 @@ Lastly, open `lambdalab-enterprise.conf` and uncomment the following line and po
 ```
   // samlMetadata: ${LAMBDA_HOME}/samlMetadata/METADATA_IDP.XML
 ```
-Save and close the config file and restart codatlas. Note that when SAML is enabled, other login methods (GitHub, LDAP etc.) will be disabled.
+Save and close the config file and restart web server. Note that when SAML is enabled, other login methods (GitHub, LDAP etc.) will be disabled.

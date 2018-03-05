@@ -25,12 +25,14 @@ github {
 }
 ```
 
-**Notice**: Remember to uncomment the entire `github` section by removing the leading `#` in each line.
+**Notice**:
+* Remember to uncomment the entire `github` section by removing the leading `#` in each line.
+* If you would like to enable private repo access by default, replace the `public_repo` to `repo` in the `scope` field.
 
-After the change, restart codatlas process:
+After the change, restart web server by:
 
 ```bash
-./lambda-compose restart codatlas
+./lambda-compose restart webserver
 ```
 
 Go back to your browser and go to Insight.io Home Page, click on `Login` button on the top right, and then click on `Login with Github`, make sure you can successfully login with your Github account.

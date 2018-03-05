@@ -27,10 +27,10 @@ gitlab {
 }
 ```
 
-After the change, restart codatlas process:
+After the change, restart web server:
 
 ```bash
-./lambda-compose restart codatlas
+./lambda-compose restart webserver
 ```
 
 Go back to your browser and go to Insight.io Home Page, click on Login button on the top right, and then click on Login with Gitlab, make sure you can successfully login with your Gitlab account.
@@ -86,10 +86,10 @@ securesocial {
 }
 ```
 
-After the change, restart codatlas process:
+After the change, restart web server:
 
 ```bash
-./lambda-compose restart codatlas
+./lambda-compose restart webserver
 ```
 
 Go back to your browser and go to Insight.io Home Page, click on Login button on the top right, and the login information should have changed from `Email` to `LDAP Username`, which means you have successfully configured LDAP authentication. Enter your LDAP credentials and you should be abled to login.

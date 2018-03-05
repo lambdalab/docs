@@ -77,7 +77,7 @@ bitbucket {
 }
 ```
 
-Then restart the codatlas service by `./lambda-compose restart lambda_codatlas`.
+Then restart the web server by `./lambda-compose restart webserver`.
 
 ## (Optional) Configure OAuth with BitBucket Server Admin User Personal Access Token
 
