@@ -21,6 +21,7 @@
   * [Add Repository](./enterprise/userguide/ADD_REPOSITORY.md)
   * [Use Gitlab Plugin](./enterprise/userguide/USE_GITLAB_PLUGIN.md)
   * [Change settings.xml for Maven Project](./enterprise/userguide/MAVEN_CHANGE_SETTINGS.md)
+  * [Customize Layout](./enterprise/userguide/CONFIGURE_CUSTOMIZED_LAYOUT.md)
   * [Customize Repository Build](./enterprise/userguide/CUSTOMIZE_REPOSITORY_BUILD.md)
   * [Obtain Code Analysis Log](./enterprise/userguide/OBTAIN_CODE_ANALYSIS_LOG.md)
   * [Use Api Access Token](./enterprise/userguide/USE_API_ACCESS_TOKEN.md)

@@ -14,6 +14,7 @@ This chapter is intended to go through the basics of how to use Insight.io. For 
 * [Add Repository](./userguide/ADD_REPOSITORY.md)
 * [Use Gitlab Plugin](./userguide/USE_GITLAB_PLUGIN.md)
 * [Change settings.xml for Maven Project](./userguide/MAVEN_CHANGE_SETTINGS.md)
+* [Customize Layout](./userguide/CONFIGURE_CUSTOMIZED_LAYOUT.md)
 * [Customize Repository Build](./userguide/CUSTOMIZE_REPOSITORY_BUILD.md)
 * [Obtain Code Analysis Log](./userguide/OBTAIN_CODE_ANALYSIS_LOG.md)
 * [Use Api Access Token](./userguide/USE_API_ACCESS_TOKEN.md)
