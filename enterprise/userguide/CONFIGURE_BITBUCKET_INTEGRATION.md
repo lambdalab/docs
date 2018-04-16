@@ -109,3 +109,21 @@ bitbucket {
 If everything works well, you should be able to see *Login with BitBucket* button in login page. Click on it to kick off the standard OAuth1 authentication process.
 
 After you have logged in, visit `/account/projects` page of Insight.io Enterprise instance and open the *Import Projects* modal and you should be able to see all the projects that are visible to you on BitBucket server.
+
+
+# Configure BitBucket Cloud Integration
+
+BitBucket Cloud (a.k.a, https://bitbucket.org) supports OAuth2 authentication. Please follow this
+[official guide](https://confluence.atlassian.com/bitbucket/oauth-on-bitbucket-cloud-238027431.html)
+on how to create an OAuth2 consumer first.
+
+Then add the following configuration in `./configs/user.conf` file.
+
+```
+bitbucket-cloud {
+  clientId="rAAUdB2YUVVMHWx9mA"
+  clientSecret="yBARtMGq8aydG4x9KKVNfkJyKthhu9Z5"
+}
+```
+
+As the last step, restart the webserver by `./lambda-compose restart webserver`.
