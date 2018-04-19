@@ -121,6 +121,9 @@ Then add the following configuration in `./configs/user.conf` file.
 
 ```
 bitbucket-cloud {
+  baseUrl="https://bitbucket.org"
+  authorizationUrl=${securesocial.bitbucket-cloud.baseUrl}/site/oauth2/authorize
+  accessTokenUrl=${securesocial.bitbucket-cloud.baseUrl}/site/oauth2/access_token
   clientId="rAAUdB2YUVVMHWx9mA"
   clientSecret="yBARtMGq8aydG4x9KKVNfkJyKthhu9Z5"
 }
