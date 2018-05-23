@@ -10,6 +10,7 @@ This chapter is intended to go through the basics of how to use Insight.io. For 
 * [Configure LDAP Integration](./userguide/CONFIGURE_LDAP_INTEGRATION.md)
 * [Configure SAML Integration](./userguide/CONFIGURE_SAML.md)
 * [Configure Insight.io Browser Plugin for GitHub Enterprise](./userguide/CONFIGURE_PLUGIN_GITHUB_ENTERPRISE.md)
+* [Configure Repositories Components](./userguide/CONFIGURE_REPOS_COMPONENT.md)
 * [Create an Account](./userguide/CREATE_ACCOUNT.md)
 * [Add Repository](./userguide/ADD_REPOSITORY.md)
 * [Use Gitlab Plugin](./userguide/USE_GITLAB_PLUGIN.md)
