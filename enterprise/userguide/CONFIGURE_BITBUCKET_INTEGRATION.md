@@ -45,7 +45,13 @@ x03ujp9k9qbUlGFBPQIDAQAB
 ## Configure OAuth on BitBucket Server
 1. Login with `admin` account on your BitBucket Server and find the *Application Links* settings in *Administration* page (/plugins/servlet/applinks/listApplicationLinks)
   ![image](https://user-images.githubusercontent.com/987855/35079954-95f31c5c-fc45-11e7-8873-1fc5b8de4a54.png)
-2. Create a new link and provide the Insight.io Enterprise link in the popout modal.
+2. Create a new link and provide the Insight.io Enterprise link in the popout modal. The *Request Token URL*, *Access
+Token URL* and *Authorize URL* should be:
+```
+  requestTokenUrl=${securesocial.bitbucket.baseUrl}/plugins/servlet/oauth/request-token
+  accessTokenUrl=${securesocial.bitbucket.baseUrl}/plugins/servlet/oauth/access-token
+  authorizationUrl=${securesocial.bitbucket.baseUrl}/plugins/servlet/oauth/authorize
+```
   ![image](https://user-images.githubusercontent.com/987855/35080038-1bce3186-fc46-11e7-8c76-20391cc9c018.png)
 3. Configure the setting for link application with all OAuth1 settings. Also, remember to opt-in the incoming link checkbox.
   ![image](https://user-images.githubusercontent.com/987855/35110185-286b5faa-fcb3-11e7-91d5-7e6ec38e7cc3.png)
@@ -53,7 +59,7 @@ x03ujp9k9qbUlGFBPQIDAQAB
 
   **Notice**: Before copy the public key, remove the `-----BEGIN PUBLIC KEY-----` and `-----END PUBLIC KEY-----` header and **join the rest of the key into 1 single line**.
   ![image](https://user-images.githubusercontent.com/987855/35110275-5a2093b2-fcb3-11e7-8247-115be06148ba.png)
-5. After you have created the application link, there is one last thing left. Edit the new create application link and in the *Incoming Authentication* tab, delete it and recreated it, but with *Consumer Callback URL* provided.
+5. After you have created the application link, there is one last thing left. Edit the new create application link and in the *Incoming Authentication* tab, delete it and recreated it, but with *Consumer Callback URL* (e.g. `http://localhost:9000/authenticate/bitbucket/` provided.
   ![image](https://user-images.githubusercontent.com/987855/35110713-74784fd8-fcb4-11e7-8d5e-f0760fd4f9f6.png)
 
 

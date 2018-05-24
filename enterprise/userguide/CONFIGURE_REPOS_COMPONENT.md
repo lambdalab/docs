@@ -5,7 +5,7 @@ maybe for the reason that these repositories are logically tight together.
 
 Now we allow the system admin to group some repositories together and predefine these groups as components.
 
-Curate a `component.json` file (make sure the filename is `component.json` exactly) under `lambda_home/configs/` with a similar structure as follows:
+Curate a `component.json` file (make sure the filename is `component.json` exactly) under `configs/` with a similar structure as follows:
 
 ```json
    {
