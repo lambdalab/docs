@@ -111,6 +111,19 @@ bitbucket {
 }
 ```
 
+## (Optional) Customize Git Clone/Update SSH Port
+
+(This section is optional)
+
+If your BitBucket Server instance has a customized git clone ssh port, you need follow this section to make sure your
+private repositories can be checked out normally.
+
+```
+bitbucket {
+  ...
+  sshPort: 1234
+}
+
 ## Verify the Integration
 If everything works well, you should be able to see *Login with BitBucket* button in login page. Click on it to kick off the standard OAuth1 authentication process.
 
