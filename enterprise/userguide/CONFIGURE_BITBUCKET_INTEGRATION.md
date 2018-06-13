@@ -123,6 +123,7 @@ bitbucket {
   ...
   sshPort: 1234
 }
+```
 
 ## Verify the Integration
 If everything works well, you should be able to see *Login with BitBucket* button in login page. Click on it to kick off the standard OAuth1 authentication process.
